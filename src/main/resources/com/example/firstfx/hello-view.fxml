@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="779.0" style="-fx-background-image: url('file:Untitled-design-31.png');" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstfx.HelloController">
+   <top>
+      <Text stroke="WHITE" strokeType="OUTSIDE" text="Coin Game" wrappingWidth="420.046875" BorderPane.alignment="TOP_CENTER">
+         <font>
+            <Font name="Impact" size="75.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets right="70.0" />
+         </BorderPane.margin>
+      </Text>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="insert" fill="#80300b" layoutX="120.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert even number of coins" textAlignment="CENTER" wrappingWidth="1135.783203125" BorderPane.alignment="CENTER_LEFT">
+               <font>
+                  <Font name="Showcard Gothic" size="38.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="200.0" right="300.0" top="150.0" />
+               </VBox.margin>
+               <BorderPane.margin>
+                  <Insets left="80.0" top="20.0" />
+               </BorderPane.margin>
+            </Text>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtfieldcoin" alignment="CENTER" prefHeight="87.0" prefWidth="513.0" promptText="enter coins seperated by space">
+                     <padding>
+                        <Insets bottom="35.0" left="35.0" right="35.0" top="35.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="510.0" right="300.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="enterButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enter" onDragExited="#release" onMouseEntered="#moveOnButton" onMouseExited="#release" prefHeight="80.0" prefWidth="175.0" style="-fx-background-color: #ffffff;" text="Enter!" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="38.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="680.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="100.0" top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      <VBox alignment="CENTER" prefHeight="490.0" prefWidth="4.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="100.0" top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="100.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+</BorderPane>
